@@ -11,7 +11,7 @@ gulp.task('example', function () {
     templateData: {
       g: 'v1.1'
     }
-  }))
+  })))
 });
 
 gulp.task('remove', function () {
