@@ -9,7 +9,7 @@ gulp.task('add', function () {
     'git remote add -f my-lib https://github.com/SHEFFcode/subrepo.git; git subtree add --prefix my-lib my-lib <%= g %>'
   ], {
     templateData: {
-      g: 'v1.1'
+      g: 'alexeisaves'
     }
   })))
 });
