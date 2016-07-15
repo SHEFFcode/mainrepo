@@ -22,5 +22,5 @@ gulp.task('remove', function () {
     templateData: {
       g: 'v1.1'
     }
-  })))
+  }))
 });
