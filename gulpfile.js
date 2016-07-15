@@ -20,7 +20,7 @@ gulp.task('remove', function () {
     'git rm my-lib; sudo rm -rf my-lib; git add -A; git commit -m "removing sub-repo"'
   ], {
     templateData: {
-      g: 'v1.1'
+      g: 'alexeisaves'
     }
   }))
 });
