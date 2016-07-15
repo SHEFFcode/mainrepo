@@ -3,7 +3,7 @@ var shell = require('gulp-shell');
 var fs = require('fs');
 var gulpif = require('gulp-if');
 
-gulp.task('example', function () {
+gulp.task('add', function () {
   return gulp.src('*.js', {read: false})
   .pipe(gulpif(!(fs.exists('./v1.1/')), shell([
     'git subtree add --prefix my-lib my-lib <%= g %>'
