@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/SHEFFcode/subrepo.git
+	branch = v1.1
+	commit = 708e999ada5c67926078a8ab298ed4db4029f322
+	parent = 9095e48056f9ba9b4e83777c295e60ab4b4a3bfa
+	cmdver = 0.3.0
