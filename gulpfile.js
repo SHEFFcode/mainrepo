@@ -12,4 +12,15 @@ gulp.task('example', function () {
       g: 'v1.1'
     }
   })))
+});
+
+gulp.task('remove', function () {
+  return gulp.src('*.js', {read: false})
+  .pipe(shell([
+    'git rm my-lib; sudo rm -rf my-lib; git add -A; git commit -m "removing sub-repo"'
+  ], {
+    templateData: {
+      g: 'v1.1'
+    }
+  })))
 })
