@@ -1,6 +1,7 @@
 var gulp  = require('gulp');
 var shell = require('gulp-shell');
 var fs = require('fs');
+var rimraf = require('rimraf');
 var gulpif = require('gulp-if');
 
 gulp.task('add', function () {
@@ -15,9 +16,15 @@ gulp.task('add', function () {
 });
 
 gulp.task('remove', function () {
+  rimraf("my-lib", function(){
+    console.log('successfully removed files.');
+  }, function() {
+    console.log('error in removing files.');
+  });
   return gulp.src('*.js', {read: false})
   .pipe(shell([
-    'git rm my-lib; sudo rm -rf my-lib; git add -A; git commit -m "removing sub-repo"'
+    'git rm -r my-lib; git add -A; git commit -m "removing sub-repo"'
+
   ], {
     templateData: {
       g: 'alexeisaves'
